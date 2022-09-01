@@ -1,0 +1,6 @@
+<div class="card h-100" >
+    <div class="card-body">
+      <h2 class="card-title">{{pokemon.name | titlecase}}</h2>
+      <a [routerLink]="['/details', pokemon.name]" class="btn btn-primary float-end">Ver detalles</a>
+    </div>
+</div>

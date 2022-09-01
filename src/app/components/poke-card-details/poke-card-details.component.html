@@ -1,0 +1,11 @@
+<div class="card" >
+    <img [src]="pokemonDetails.sprites.other.home.front_default" class="card-img-top rounded" [alt]="pokemonDetails.name">
+    <div class="card-body">
+      <h2 class="card-title">{{pokemonDetails.name | titlecase}}</h2>
+      <h4>Habildades</h4>
+      <ul>
+        <li *ngFor="let abilities of pokemonDetails.abilities">{{abilities.ability.name}}</li>
+      </ul>
+      <a [routerLink]="['/home']" class="btn btn-primary float-end">Volver a la lista</a>
+    </div>
+  </div>
